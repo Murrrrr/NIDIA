@@ -1,0 +1,213 @@
+.contactWrapper {
+  width: 100%;
+}
+
+.contactWrapper .searchSection {
+  text-align: center;
+  width: 80%;
+  margin: 5rem auto;
+}
+
+.contactWrapper .searchSection h1 {
+  font-size: 1.5rem;
+}
+
+.contactWrapper .searchSection h2 {
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.contactWrapper .searchSection .searchBar {
+  position: relative;
+  display: inline-block;
+  width: 60%;
+}
+
+.contactWrapper .searchSection .searchBar input {
+  width: 100%;
+  padding: 1rem;
+  border: 3px solid #006FD4;
+}
+
+.contactWrapper .searchSection .searchBar .fa-search {
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3%;
+  font-size: 1.2rem;
+  color: #006FD4;
+  position: absolute;
+}
+
+.contactWrapper .faqWrapper {
+  padding: 2rem 0;
+  width: 100%;
+  background-color: #006FD4;
+}
+
+.contactWrapper .faqWrapper .faqSection {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.contactWrapper .faqWrapper .faqSection .subject {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.contactWrapper .faqWrapper .faqSection .subject h1 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.contactWrapper .faqWrapper .faqSection .subject img {
+  width: 5%;
+}
+
+.contactWrapper .faqWrapper .faqSection .faqContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactWrapper .faqWrapper .faqSection .faqContainer .faqItem {
+  cursor: pointer;
+  padding: 3.5rem 2rem;
+  width: 24%;
+  background-color: #fff;
+}
+
+.contactWrapper .faqWrapper .faqSection .faqContainer .faqItem h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contactWrapper .faqWrapper .faqSection .faqContainer .faqItem p {
+  line-height: 2rem;
+  word-break: keep-all;
+}
+
+.contactWrapper .mtomWrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.contactWrapper .mtomWrapper h1 {
+  font-size: 1.2rem;
+}
+
+.contactWrapper .mtomWrapper .mtomContainer {
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactWrapper .mtomWrapper .mtomContainer #chatSection h2 {
+  color: #006FD4;
+  cursor: pointer;
+}
+
+.contactWrapper .mtomWrapper .mtomContainer .mtomSection {
+  width: 32%;
+  padding: 2.5rem;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.contactWrapper .mtomWrapper .mtomContainer .mtomSection i {
+  padding: 3rem 0;
+  font-size: 3rem;
+}
+
+.contactWrapper .mtomWrapper .mtomContainer .mtomSection h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  padding: 0.8rem 0;
+}
+
+.contactWrapper .mtomWrapper .mtomContainer .mtomSection .fa-chevron-right {
+  margin-left: 0.5rem;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.contactWrapper .mtomWrapper .mtomContainer .mtomSection p {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  word-break: keep-all;
+}
+
+.contactWrapper .boardNav {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.contactWrapper .boardNav .mainNav {
+  display: flex;
+}
+
+.contactWrapper .boardNav .mainNav .mainNav-list {
+  width: 33.3333%;
+}
+
+.contactWrapper .boardNav .mainNav .mainNav-list:nth-child(1) .subject {
+  background-color: #006FD4;
+}
+
+.contactWrapper .boardNav .mainNav .mainNav-list:nth-child(1) .subject:hover {
+  background-color: #0258a8;
+}
+
+.contactWrapper .boardNav .mainNav .mainNav-list:nth-child(2) .subject {
+  background-color: #2688E2;
+}
+
+.contactWrapper .boardNav .mainNav .mainNav-list:nth-child(2) .subject:hover {
+  background-color: #1869c5;
+}
+
+.contactWrapper .boardNav .mainNav .mainNav-list:nth-child(3) .subject {
+  background-color: #57AFFF;
+}
+
+.contactWrapper .boardNav .mainNav .mainNav-list:nth-child(3) .subject:hover {
+  background-color: #4083db;
+}
+
+.contactWrapper .boardNav .mainNav .mainNav-list a {
+  color: #fff;
+  padding: 1.5rem 2rem;
+}
+
+.contactWrapper .boardNav .mainNav .mainNav-list a .fa-chevron-right {
+  margin-left: 1rem;
+}
+
+.contactWrapper .boardNav .mainNav .mainNav-list .subNav li {
+  background-color: #fff;
+}
+
+.contactWrapper .boardNav .mainNav .mainNav-list .subNav li a {
+  font-size: 0.9rem;
+  color: #000;
+}
+
+.contactWrapper .boardNav .mainNav .mainNav-list .subNav li a:hover {
+  background-color: #eee;
+}
+
+.contactWrapper .boardNav .mainNav .mainNav-list .subNav li a span {
+  display: inline;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  background-color: #FF6D0C;
+  font-weight: 700;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}

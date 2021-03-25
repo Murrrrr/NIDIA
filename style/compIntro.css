@@ -1,0 +1,57 @@
+.bodyWrapper {
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+.bodyWrapper .contentsWrapper {
+  width: 85%;
+  margin: 10% auto;
+}
+
+.bodyWrapper .contentsWrapper .contentsLogo {
+  margin: 0 auto;
+  width: 20%;
+}
+
+.bodyWrapper .contentsWrapper .contentsLogo img {
+  width: 100%;
+}
+
+.bodyWrapper .contentsWrapper p {
+  width: 70%;
+  margin: 10% auto;
+  text-align: center;
+  font-size: 1.2rem;
+  word-break: keep-all;
+  line-height: 3rem;
+}
+
+.bodyWrapper .contentsWrapper p strong {
+  color: #0068AB;
+  font-size: 1.2rem;
+}
+
+.bodyWrapper .contentsWrapper .iconWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bodyWrapper .contentsWrapper .iconWrapper .iconContainer {
+  width: 33.333%;
+  text-align: center;
+}
+
+.bodyWrapper .contentsWrapper .iconWrapper .iconContainer img {
+  width: 25%;
+}
+
+.bodyWrapper .contentsWrapper .iconWrapper .iconContainer h1 {
+  margin: 5% 0;
+  font-size: 1.2rem;
+}
+
+.bodyWrapper .contentsWrapper .iconWrapper .iconContainer h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}

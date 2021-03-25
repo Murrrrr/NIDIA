@@ -1,0 +1,121 @@
+.bodyWrapper {
+  width: 100%;
+}
+
+.bodyWrapper .productWrapper {
+  margin: 10% auto;
+  width: 75%;
+}
+
+.bodyWrapper .productWrapper .product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, auto));
+  grid-template-rows: repeat(7, minmax(150px, auto));
+  align-items: center;
+}
+
+.bodyWrapper .productWrapper .product-grid .productInfo {
+  line-height: 1.8rem;
+}
+
+.bodyWrapper .productWrapper .product-grid .productInfo h1 {
+  font-size: 1rem;
+}
+
+.bodyWrapper .productWrapper .product-grid .productInfo h2 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  word-break: keep-all;
+}
+
+.bodyWrapper .productWrapper .product-grid .productImage {
+  padding: 10% 0;
+  text-align: center;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.bodyWrapper .productWrapper .product-grid .productImage img {
+  width: 30%;
+}
+
+.bodyWrapper .productWrapper .product-grid .productImage h1 {
+  padding: 0.5rem 0;
+  font-weight: 500;
+}
+
+.bodyWrapper .productWrapper .product-grid .productOX {
+  padding: 18% 0;
+  text-align: center;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.bodyWrapper .productWrapper .product-grid .downloadItem {
+  text-align: center;
+}
+
+.bodyWrapper .productWrapper .product-grid .downloadItem button {
+  margin-top: 2rem;
+  border-radius: 50px;
+  border: none;
+  background-color: #006FD4;
+  width: 7.5rem;
+  height: 2.5rem;
+  color: #fff;
+}
+
+.bodyWrapper .productIntro {
+  padding: 10rem 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F7F7F7;
+}
+
+.bodyWrapper .productIntro .programUI {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+}
+
+.bodyWrapper .productIntro .programUI img {
+  width: 50%;
+}
+
+.bodyWrapper .productIntro .programUI h1 {
+  font-size: 1.5rem;
+}
+
+.bodyWrapper .productIntro .programUI h2 {
+  font-weight: 500;
+  line-height: 4rem;
+  font-size: 1.2rem;
+}
+
+.bodyWrapper .productIntro .productItem {
+  width: 70%;
+  margin: 5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bodyWrapper .productIntro .productItem .infoWrapper {
+  width: 50%;
+  margin: 10% 0;
+}
+
+.bodyWrapper .productIntro .productItem .infoWrapper h1 {
+  font-size: 1.4rem;
+}
+
+.bodyWrapper .productIntro .productItem .infoWrapper h2 {
+  margin-top: 1rem;
+  word-break: keep-all;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.bodyWrapper .productIntro .productItem img {
+  width: 40%;
+}

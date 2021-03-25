@@ -1,0 +1,123 @@
+.bodyWrapper{
+    width: 100%;
+
+    .productWrapper{
+        margin: 10% auto;
+        width: 75%;
+
+        .product-grid{
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, auto));
+            grid-template-rows: repeat(7, minmax(150px, auto));
+            align-items: center;
+
+            .productInfo{
+                line-height: 1.8rem;
+                h1{
+                    font-size: 1rem;
+                }
+
+                h2{
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    word-break: keep-all;
+                    
+                }
+            }
+
+            .productImage{
+                padding: 10% 0;
+                text-align: center;
+                border-bottom: 1px solid #BDBDBD;
+
+                img{
+                    width: 30%;
+                }
+
+                h1{
+                    padding: 0.5rem 0;
+                    font-weight: 500;
+                }
+            }
+
+            .productOX{
+                padding: 18% 0;
+                text-align: center;
+                border-bottom: 1px solid #BDBDBD;
+            }
+
+            .downloadItem{
+                text-align: center;
+
+                button{
+                    margin-top: 2rem;
+                    border-radius: 50px;
+                    border: none;
+                    background-color: #006FD4;
+                    width: 7.5rem;
+                    height: 2.5rem;
+                    color: #fff;
+                }
+            }
+
+        }
+    }
+
+    .productIntro{
+        padding: 10rem 0;
+        width: 100%;
+        height: 100%;
+        background-color: #F7F7F7;
+
+        .programUI{
+            display:block;
+            margin: 0 auto;
+            width: 70%;
+            text-align: center;
+
+            img{
+                width: 50%;
+            }
+
+            h1{
+                font-size: 1.5rem;
+            }
+
+            h2{
+                font-weight: 500;
+                line-height: 4rem;
+                font-size: 1.2rem;
+            }
+        }
+
+        .productItem{
+            width: 70%;
+            margin: 5rem auto;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .infoWrapper{
+                width: 50%;
+                margin: 10% 0;
+
+                h1{
+                    font-size: 1.4rem;
+                }
+
+                h2{
+                    margin-top: 1rem;
+                    word-break: keep-all;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    line-height: 2rem;
+                }
+            }
+
+            img{
+                width: 40%;
+            }
+        }
+    }
+}
+

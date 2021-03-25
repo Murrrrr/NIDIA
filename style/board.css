@@ -1,0 +1,67 @@
+.noticeWrapper {
+  width: 75%;
+  margin: 5rem auto;
+}
+
+.noticeWrapper h1 {
+  font-size: 1.5rem;
+}
+
+.noticeWrapper h2 {
+  font-weight: 500;
+  padding: 2rem 0;
+}
+
+.noticeWrapper .tableContents {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+  justify-content: space-between;
+}
+
+.noticeWrapper .tableContents .tableClassifi {
+  text-align: center;
+  color: #fff;
+  padding: 1.2rem;
+  background-color: #006FD4;
+}
+
+.noticeWrapper .tableContents #tableSub {
+  border-right: 3px solid #fff;
+}
+
+.noticeWrapper .tableContents #tableDate {
+  border-right: 3px solid #fff;
+}
+
+.noticeWrapper .tableContents .tableItem {
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #C5C5C5;
+}
+
+.noticeWrapper .tableContents .tableItem span {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  background-color: #FF6D0C;
+  font-weight: 700;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.noticeWrapper .tableContents .date, .noticeWrapper .tableContents .view {
+  text-align: center;
+}
+
+.noticeWrapper .pageNumberWrapper {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.noticeWrapper .pageNumberWrapper .pageNumber {
+  display: inline-block;
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  background-color: #006FD4;
+}

@@ -1,0 +1,57 @@
+.boardWrapper{
+    width: 75%;
+    margin: 5rem auto;
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-weight: 500;
+        padding: 2rem 0;
+    }
+
+    .tableContents{
+        margin-top: 2rem;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .tableClassifi{
+            text-align: center;
+            color: #fff;
+            padding: 1.2rem;
+            background-color: #006FD4;
+        }
+
+        #tableSub{
+            span{
+                margin-right: 1rem;
+                font-size: 0.9rem;
+                background-color: #FF6D0C;
+                font-weight: 700;
+                color: #fff;
+                padding: 0.5rem 1rem;
+            }
+            width: 60%;
+            text-align: left;
+            border-right: 3px solid #fff;
+        }
+
+        #tableDate{
+            width: 20%;
+            border-right: 3px solid #fff;
+        }
+
+        #tableView{
+            width: 20%;
+        }
+    }
+
+    .writingSection{
+        padding: 2rem;
+        word-break: keep-all;
+        line-height: 2rem;
+        border-bottom: 1px solid #ddd;
+    }
+}
