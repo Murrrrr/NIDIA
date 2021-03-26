@@ -6,7 +6,6 @@
 
 .bodyWrapper .mainWrapper {
   position: relative;
-  height: 90%;
 }
 
 .bodyWrapper .mainWrapper .mainImage {
@@ -27,24 +26,18 @@
 
 .bodyWrapper .mainWrapper .mainIntro h1 {
   letter-spacing: 1px;
-  font-size: 2.5rem;
   color: #fff;
 }
 
 .bodyWrapper .mainWrapper .mainIntro h2 {
-  margin: 3% 0;
   text-align: center;
   font-weight: 500;
-  font-size: 1.25rem;
   color: #fff;
-  line-height: 3rem;
 }
 
 .bodyWrapper .mainWrapper .mainIntro a {
   letter-spacing: 2px;
-  font-size: 1rem;
   display: inline-block;
-  padding: 1rem 2.5rem;
   background-color: #006FD4;
   color: #fff;
   border-radius: 50px;
@@ -57,71 +50,188 @@
   background-color: #17017a;
 }
 
-.bodyWrapper .boardNav {
+.bodyWrapper .pcBoardNav {
   width: 100%;
   border-bottom: 1px solid #ddd;
 }
 
-.bodyWrapper .boardNav .mainNav {
+.bodyWrapper .pcBoardNav .mainNav {
   display: flex;
 }
 
-.bodyWrapper .boardNav .mainNav .mainNav-list {
+.bodyWrapper .pcBoardNav .mainNav .mainNav-list {
   width: 33.3333%;
 }
 
-.bodyWrapper .boardNav .mainNav .mainNav-list:nth-child(1) .subject {
+.bodyWrapper .pcBoardNav .mainNav .mainNav-list:nth-child(1) .subject {
   background-color: #006FD4;
 }
 
-.bodyWrapper .boardNav .mainNav .mainNav-list:nth-child(1) .subject:hover {
+.bodyWrapper .pcBoardNav .mainNav .mainNav-list:nth-child(1) .subject:hover {
   background-color: #0258a8;
 }
 
-.bodyWrapper .boardNav .mainNav .mainNav-list:nth-child(2) .subject {
+.bodyWrapper .pcBoardNav .mainNav .mainNav-list:nth-child(2) .subject {
   background-color: #2688E2;
 }
 
-.bodyWrapper .boardNav .mainNav .mainNav-list:nth-child(2) .subject:hover {
+.bodyWrapper .pcBoardNav .mainNav .mainNav-list:nth-child(2) .subject:hover {
   background-color: #1869c5;
 }
 
-.bodyWrapper .boardNav .mainNav .mainNav-list:nth-child(3) .subject {
+.bodyWrapper .pcBoardNav .mainNav .mainNav-list:nth-child(3) .subject {
   background-color: #57AFFF;
 }
 
-.bodyWrapper .boardNav .mainNav .mainNav-list:nth-child(3) .subject:hover {
+.bodyWrapper .pcBoardNav .mainNav .mainNav-list:nth-child(3) .subject:hover {
   background-color: #4083db;
 }
 
-.bodyWrapper .boardNav .mainNav .mainNav-list a {
+.bodyWrapper .pcBoardNav .mainNav .mainNav-list a {
   color: #fff;
-  padding: 1.5rem 2rem;
 }
 
-.bodyWrapper .boardNav .mainNav .mainNav-list a .fa-chevron-right {
-  margin-left: 1rem;
-}
-
-.bodyWrapper .boardNav .mainNav .mainNav-list .subNav li {
+.bodyWrapper .pcBoardNav .mainNav .mainNav-list .subNav li {
   background-color: #fff;
 }
 
-.bodyWrapper .boardNav .mainNav .mainNav-list .subNav li a {
-  font-size: 0.9rem;
+.bodyWrapper .pcBoardNav .mainNav .mainNav-list .subNav li a {
   color: #000;
 }
 
-.bodyWrapper .boardNav .mainNav .mainNav-list .subNav li a:hover {
+.bodyWrapper .pcBoardNav .mainNav .mainNav-list .subNav li a:hover {
   background-color: #eee;
 }
 
-.bodyWrapper .boardNav .mainNav .mainNav-list .subNav li a span {
+.bodyWrapper .pcBoardNav .mainNav .mainNav-list .subNav li a span {
   display: inline;
-  margin-right: 1rem;
-  font-size: 0.9rem;
   background-color: #FF6D0C;
   font-weight: 700;
   color: #fff;
-  padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 1600px) {
+  .mainIntro {
+    font-size: 2.2rem;
+  }
+  .mainIntro h1 {
+    font-size: 1em;
+  }
+  .mainIntro h2 {
+    margin: 3% 0;
+    font-size: 0.55em;
+    line-height: 3rem;
+  }
+  .mainIntro a {
+    font-size: 1rem;
+    padding: 1rem 2.5rem;
+  }
+  .mainNav-list a {
+    padding: 1.5rem 2rem;
+  }
+  .mainNav-list a .fa-chevron-right {
+    margin-left: 1rem;
+  }
+  .mainNav-list .subNav a {
+    font-size: 0.9rem;
+  }
+  .mainNav-list .subNav a span {
+    margin-right: 1rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mainWrapper {
+    height: 90%;
+  }
+  .mainWrapper .mainIntro {
+    font-size: 1.7rem;
+  }
+  .mainWrapper .mainIntro h2 {
+    margin: 5% 0;
+    line-height: 2em;
+  }
+  .mainWrapper .mainIntro a {
+    font-size: 0.85rem;
+    padding: 0.8rem 2rem;
+  }
+  .mainNav-list a {
+    font-size: 0.85rem;
+    padding: 1.2rem 2rem;
+  }
+  .mainNav-list a .fa-chevron-right {
+    font-size: 0.85rem;
+    margin-left: 1rem;
+  }
+  .mainNav-list .subNav a {
+    font-size: 0.8rem;
+  }
+  .mainNav-list .subNav a span {
+    margin-right: 1rem;
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainWrapper {
+    height: 50%;
+  }
+  .mainWrapper .mainIntro {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+  .mainWrapper .mainIntro h2 {
+    margin: 5% 0;
+    line-height: 2em;
+  }
+  .mainWrapper .mainIntro a {
+    font-size: 0.85rem;
+    padding: 0.8rem 2rem;
+  }
+  .pcBoardNav {
+    display: none;
+  }
+  .mobileBoardNav {
+    width: 100%;
+  }
+  .mobileBoardNav .mainNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobileBoardNav .mainNav li {
+    width: 33.3333%;
+  }
+  .mobileBoardNav .mainNav li a {
+    font-size: 1rem;
+    text-align: center;
+    padding: 3rem 0;
+    color: #fff;
+  }
+  .mobileBoardNav .mainNav li a i {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .mobileBoardNav .mainNav li:nth-child(1) .subject {
+    background-color: #006FD4;
+  }
+  .mobileBoardNav .mainNav li:nth-child(1) .subject:hover {
+    background-color: #0258a8;
+  }
+  .mobileBoardNav .mainNav li:nth-child(2) .subject {
+    background-color: #2688E2;
+  }
+  .mobileBoardNav .mainNav li:nth-child(2) .subject:hover {
+    background-color: #1869c5;
+  }
+  .mobileBoardNav .mainNav li:nth-child(3) .subject {
+    background-color: #57AFFF;
+  }
+  .mobileBoardNav .mainNav li:nth-child(3) .subject:hover {
+    background-color: #4083db;
+  }
 }

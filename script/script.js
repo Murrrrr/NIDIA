@@ -45,7 +45,15 @@ window.onload = ()=>{
         }
     })
 
-    introImage.style.backgroundImage = `url(${compImgArr[ranNum].backgroundUrl})`;
-    introImage.style.backgroundPositionY = `${compImgArr[ranNum].positionY}`;
-    introInfoH1.innerHTML = compImgArr[ranNum].introInfo;
+    if(introImage == null){
+        return 0;
+    }
+
+    else{
+        introImage.style.backgroundImage = `url(${compImgArr[ranNum].backgroundUrl})`;
+        introImage.style.backgroundPositionY = `${compImgArr[ranNum].positionY}`;
+        introInfoH1.innerHTML = compImgArr[ranNum].introInfo;
+    }
+
+    
 }

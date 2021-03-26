@@ -1,0 +1,31 @@
+@import "./variables";
+
+@mixin widedesktop{
+    @media screen and (max-width: #{$breakpointWideDesktop}){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media screen and (max-width: #{$breakpointDesktop}){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media screen and (max-width: #{$breakpointTablet}){
+        @content;
+    }
+}
+
+@mixin largeMobile{
+    @media screen and (max-width: #{$breakpointLarMobile}){
+        @content;
+    }
+}
+
+@mixin mobile{
+    @media screen and (max-width: #{$breakpointMobile}){
+        @content;
+    }
+}

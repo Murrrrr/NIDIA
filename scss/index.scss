@@ -1,3 +1,5 @@
+@import "./mixin";
+
 .bodyWrapper{
     display:block;
     width: 100%;
@@ -5,7 +7,6 @@
 
     .mainWrapper{
         position:relative;
-        height: 90%;
         
         .mainImage{
             width: 100%;
@@ -24,24 +25,19 @@
 
             h1{
                 letter-spacing: 1px;
-                font-size: 2.5rem;
                 color: #fff;
             }
 
             h2{
-                margin: 3% 0;
                 text-align: center;
                 font-weight: 500;
-                font-size: 1.25rem;
                 color: #fff;
-                line-height: 3rem;
+
             }
 
             a{
                 letter-spacing: 2px;
-                font-size: 1rem;
                 display:inline-block;
-                padding: 1rem 2.5rem;
                 background-color: #006FD4;
                 color: #fff;
                 border-radius: 50px;
@@ -57,7 +53,7 @@
 
     }
 
-    .boardNav{
+    .pcBoardNav{
         width: 100%;
         border-bottom: 1px solid #ddd;
 
@@ -97,11 +93,6 @@
 
                 a{
                     color: #fff;
-                    padding: 1.5rem 2rem;
-                    
-                    .fa-chevron-right{
-                        margin-left: 1rem;
-                    }
                 }
 
                 .subNav{
@@ -110,27 +101,195 @@
                         background-color: #fff;
 
                         a{
-                            font-size: 0.9rem;
                             color: #000;
+
                             &:hover{
                                 background-color: #eee;
                             }
                             span{
                                 display:inline;
-                                margin-right: 1rem;
-                                font-size: 0.9rem;
                                 background-color: #FF6D0C;
                                 font-weight: 700;
                                 color: #fff;
-                                padding: 0.5rem 1rem;
                             }
                         }
                     }
                 }
             }
         }
+    }
+}
 
+@include widedesktop{
 
+    .mainIntro{
+        font-size: 2.2rem;
+        h1{
+            font-size: 1em;
+        }
+
+        h2{
+            margin: 3% 0;
+            font-size: 0.55em;
+            line-height: 3rem;
+        }
+
+        a{
+            font-size: 1rem;
+            padding: 1rem 2.5rem;
+        }
     }
 
+    .mainNav-list{
+        a{
+            padding: 1.5rem 2rem;
+
+            .fa-chevron-right{
+                margin-left: 1rem;
+            }
+        }
+
+        .subNav{
+            a{
+                font-size: 0.9rem;
+
+                span{
+                    margin-right: 1rem;
+                    font-size: 0.9rem;
+                    padding: 0.5rem 1rem;
+                }
+            }
+        }
+    }
+}
+
+@include desktop{
+    
+    .mainWrapper{
+        height: 90%;
+
+        .mainIntro{
+            font-size: 1.7rem;
+    
+            h2{
+                margin: 5% 0;
+                line-height: 2em;
+            }
+    
+            a{
+                font-size: 0.85rem;
+                padding: 0.8rem 2rem;
+                
+            }
+        }
+    }
+
+    .mainNav-list{
+        a{
+            font-size: 0.85rem;
+            padding: 1.2rem 2rem;
+
+            .fa-chevron-right{
+                font-size: 0.85rem;
+                margin-left: 1rem;
+            }
+
+        }
+
+        .subNav{
+            a{
+                font-size: 0.8rem;
+
+                span{
+                    margin-right: 1rem;
+                    font-size: 0.7rem;
+                    padding: 0.4rem 0.8rem;
+                }
+            }
+        }
+    }
+
+}
+
+@include tablet{
+
+    .mainWrapper{
+        height: 50%;
+
+        .mainIntro{
+            width: 80%;
+            font-size: 1.5rem;
+    
+            h2{
+                margin: 5% 0;
+                line-height: 2em;
+            }
+    
+            a{
+                font-size: 0.85rem;
+                padding: 0.8rem 2rem;
+                
+            }
+        }
+    }
+
+    .pcBoardNav{
+        display: none;
+    }
+
+    .mobileBoardNav{
+        width: 100%;
+
+        .mainNav{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            li{                    
+                width: 33.3333%;
+
+                a{
+                    
+                    i{
+                        display:block;
+                        font-size: 2rem;
+                        margin-bottom: 1rem;
+                    }
+                    font-size: 1rem;
+                    text-align: center;
+                    padding: 3rem 0;
+                    color: #fff;
+                }
+
+                &:nth-child(1){
+                    .subject{
+                        &:hover{
+                            background-color: #0258a8;
+                        }
+                        background-color: #006FD4;
+                    }
+                }
+
+                &:nth-child(2){
+                    .subject{
+                        &:hover{
+                            background-color: #1869c5;
+                        }
+                        background-color: #2688E2;
+                    }
+                }
+
+                &:nth-child(3){
+                    .subject{
+                        &:hover{
+                            background-color: #4083db;
+                        }
+                        background-color: #57AFFF;
+                    }
+                }
+            }
+        }
+    }
+    
 }
