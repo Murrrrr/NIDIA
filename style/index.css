@@ -235,3 +235,12 @@
     background-color: #4083db;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .mainWrapper .mainIntro {
+    font-size: 1.2rem;
+  }
+  .mobileBoardNav .mainNav li a {
+    font-size: 0.8rem;
+  }
+}

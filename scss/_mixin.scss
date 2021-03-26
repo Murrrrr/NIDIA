@@ -18,12 +18,6 @@
     }
 }
 
-@mixin largeMobile{
-    @media screen and (max-width: #{$breakpointLarMobile}){
-        @content;
-    }
-}
-
 @mixin mobile{
     @media screen and (max-width: #{$breakpointMobile}){
         @content;
