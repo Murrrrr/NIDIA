@@ -374,7 +374,7 @@ footer {
 
     footer {
         height: auto;
-        padding: 1rem 0;
+        padding: 3rem 0;
 
         .footerWrapper {
             display: flex;
@@ -384,7 +384,7 @@ footer {
                 margin-bottom: 1rem;
                 top: 0;
                 transform: none;
-                width: 10%;
+                width: 20%;
                 position: relative;
             }
 
@@ -395,7 +395,7 @@ footer {
 
                 span {
                     padding: 0.5rem 0;
-                    font-size: 1em;
+                    font-size: 0.5em;
                 }
             }
         }
