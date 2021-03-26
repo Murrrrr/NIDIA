@@ -120,7 +120,66 @@
     }
 }
 
-@include widedesktop{
+@include alldesktop{
+
+    .mobileBoardNav{
+        display:none;
+    }
+    .mainWrapper{
+        height: 90%;
+    }
+
+    .mainIntro{
+        font-size: 2.2rem;
+        h1{
+            font-size: 1em;
+        }
+
+        h2{
+            margin: 3% 0;
+            font-size: 0.55em;
+            line-height: 3rem;
+        }
+
+        a{
+            font-size: 1rem;
+            padding: 1rem 2.5rem;
+        }
+    }
+
+    .mainNav-list{
+        a{
+            padding: 1.5rem 2rem;
+
+            .fa-chevron-right{
+                margin-left: 1rem;
+            }
+        }
+
+        .subNav{
+            a{
+                font-size: 0.9rem;
+
+                span{
+                    margin-right: 1rem;
+                    font-size: 0.9rem;
+                    padding: 0.5rem 1rem;
+                }
+            }
+        }
+    }
+
+}
+
+@include widedesktop {
+
+    .mobileBoardNav{
+        display:none;
+    }
+
+    .mainWrapper{
+        height: 90%;
+    }
 
     .mainIntro{
         font-size: 2.2rem;
@@ -164,6 +223,10 @@
 }
 
 @include desktop{
+
+    .mobileBoardNav{
+        display:none;
+    }
     
     .mainWrapper{
         height: 90%;

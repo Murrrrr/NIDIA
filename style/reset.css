@@ -236,6 +236,40 @@ footer .footerWrapper .infoWrapper {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1600px) {
+  header {
+    height: 5rem;
+  }
+  header .logo {
+    height: 5rem;
+  }
+  header .pcNav {
+    height: 5rem;
+  }
+  header .pcNav ul li a {
+    width: 8rem;
+    line-height: 5rem;
+    height: 5rem;
+    font-size: 1rem;
+  }
+  header .mobileNav {
+    display: none;
+  }
+  footer {
+    height: 8rem;
+  }
+  footer .footerWrapper img {
+    width: 7%;
+  }
+  footer .footerWrapper .infoWrapper {
+    font-size: 0.75rem;
+  }
+  footer .footerWrapper .infoWrapper span {
+    font-size: 1em;
+    margin: 0 1em;
+  }
+}
+
 @media screen and (max-width: 1600px) {
   header {
     height: 5rem;
@@ -251,6 +285,15 @@ footer .footerWrapper .infoWrapper {
     line-height: 5rem;
     height: 5rem;
     font-size: 1rem;
+  }
+  header .mobileNav {
+    display: none;
+  }
+  footer {
+    height: 8rem;
+  }
+  footer .footerWrapper img {
+    width: 7%;
   }
   footer .footerWrapper .infoWrapper {
     font-size: 0.75rem;

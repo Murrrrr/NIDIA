@@ -254,6 +254,58 @@ footer {
     }
 }
 
+@include alldesktop{
+    $headerHeight: 5rem;
+
+    header {
+        height: #{$headerHeight};
+
+        .logo {
+            height: #{$headerHeight};
+        }
+
+        .pcNav {
+            height: #{$headerHeight};
+
+            ul {
+                li {
+                    a {
+                        width: 8rem;
+                        line-height: #{$headerHeight};
+                        height: #{$headerHeight};
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .mobileNav {
+            display: none;
+        }
+
+    }
+
+    footer {
+        height: 8rem;
+
+        .footerWrapper {
+            img{
+                width: 7%;
+            }
+            
+            .infoWrapper {
+                font-size: 0.75rem;
+
+                span {
+                    font-size: 1em;
+                    margin: 0 1em;
+                }
+            }
+        }
+    }
+
+}
+
 @include widedesktop {
     $headerHeight: 5rem;
 
@@ -279,13 +331,19 @@ footer {
             }
         }
 
+        .mobileNav {
+            display: none;
+        }
 
     }
 
     footer {
-
-
+        height: 8rem;
         .footerWrapper {
+
+            img{
+                width: 7%;
+            }
             .infoWrapper {
                 font-size: 0.75rem;
 

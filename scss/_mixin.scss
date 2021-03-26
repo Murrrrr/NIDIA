@@ -1,5 +1,11 @@
 @import "./variables";
 
+@mixin alldesktop{
+    @media screen and (min-width: #{$breakpointWideDesktop}){
+        @content;
+    }
+}
+
 @mixin widedesktop{
     @media screen and (max-width: #{$breakpointWideDesktop}){
         @content;
