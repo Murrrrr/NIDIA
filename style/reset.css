@@ -13,16 +13,20 @@ a {
   text-decoration: none;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
 
-html::-webkit-scrollbar, body::-webkit-scrollbar {
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
   display: none;
 }
 
 header {
+  position: relative;
+  transition: right 0.5s ease;
   display: flex;
   width: 85%;
   margin: 0 auto;
@@ -103,6 +107,44 @@ header .mobileNav .hamburgerMenu .line::before {
 
 header .mobileNav .hamburgerMenu .line::after {
   top: -10px;
+}
+
+.bodyWrapper {
+  position: relative;
+  transition: right 0.5s ease;
+}
+
+.mobileMenu {
+  top: 5%;
+  position: fixed;
+  left: 100%;
+  z-index: 8;
+  background-color: #fff;
+  width: 50%;
+  transition: left 0.5s ease;
+}
+
+.mobileMenu .loginSection {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobileMenu .loginSection span {
+  color: #fff;
+  text-align: center;
+  width: 4.5rem;
+  padding: 0.5rem 0;
+  background-color: #006FD4;
+  font-size: 0.8rem;
+}
+
+.mobileMenu ul li {
+  padding: 1rem;
+}
+
+.mobileMenu ul li a {
+  font-size: 0.8rem;
 }
 
 .modal {

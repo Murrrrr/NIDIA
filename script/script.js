@@ -2,6 +2,10 @@ const myPage = document.querySelector('.fa-user');
 const loginModal = document.querySelector('.modal');
 const introImage = document.querySelector('.introImage');
 const introInfoH1 = document.querySelector('.introInfo > h1');
+const hamburgerMenu = document.querySelector('.hamburgerMenu');
+const bodyWrapper = document.querySelector('.bodyWrapper');
+const header = document.querySelector('header');
+const mobileMenu = document.querySelector('.mobileMenu');
 
 let compImgArr = [
     {
@@ -43,6 +47,27 @@ window.onload = ()=>{
         else if(loginModal.classList.contains('active') === false){
             loginModal.classList.add('active');
         }
+    });
+
+    hamburgerMenu.addEventListener('click',()=>{
+
+        if(mobileMenu.classList.contains('active') === true){
+            mobileMenuClose();
+        }
+
+        else if(mobileMenu.classList.contains('active') == false){
+            
+            mobileMenuOpen();
+        }
+
+    })
+
+    bodyWrapper.addEventListener('click',()=>{
+        mobileMenuClose();
+    })
+
+    document.querySelector('.mobileMenu li:last-child').addEventListener('click',()=>{
+        mobileMenuClose();
     })
 
     if(introImage == null){
@@ -56,4 +81,22 @@ window.onload = ()=>{
     }
 
     
+}
+
+function mobileMenuOpen(){
+    bodyWrapper.style.right = "50%";
+    header.style.right = "50%";
+    mobileMenu.style.left = "50%";
+    mobileMenu.classList.add('active');
+    bodyWrapper.style.filter = "brightness(50%)";
+}
+
+function mobileMenuClose(){
+    bodyWrapper.style.right = "0%";
+    header.style.right = "0%";
+    mobileMenu.style.left = "100%";
+    mobileMenu.classList.remove('active');
+    setTimeout(()=>{
+        bodyWrapper.style.filter = "brightness(100%)";
+    },500)
 }
