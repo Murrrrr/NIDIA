@@ -2,58 +2,58 @@
   width: 100%;
 }
 
-.bodyWrapper .productWrapper {
+.bodyWrapper .pcProductWrapper {
   margin: 10% auto;
   width: 75%;
 }
 
-.bodyWrapper .productWrapper .product-grid {
+.bodyWrapper .pcProductWrapper .product-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, auto));
   grid-template-rows: repeat(7, minmax(150px, auto));
   align-items: center;
 }
 
-.bodyWrapper .productWrapper .product-grid .productInfo {
+.bodyWrapper .pcProductWrapper .product-grid .productInfo {
   line-height: 1.8rem;
 }
 
-.bodyWrapper .productWrapper .product-grid .productInfo h1 {
+.bodyWrapper .pcProductWrapper .product-grid .productInfo h1 {
   font-size: 1rem;
 }
 
-.bodyWrapper .productWrapper .product-grid .productInfo h2 {
+.bodyWrapper .pcProductWrapper .product-grid .productInfo h2 {
   font-size: 0.9rem;
   font-weight: 500;
   word-break: keep-all;
 }
 
-.bodyWrapper .productWrapper .product-grid .productImage {
+.bodyWrapper .pcProductWrapper .product-grid .productImage {
   padding: 10% 0;
   text-align: center;
   border-bottom: 1px solid #BDBDBD;
 }
 
-.bodyWrapper .productWrapper .product-grid .productImage img {
+.bodyWrapper .pcProductWrapper .product-grid .productImage img {
   width: 30%;
 }
 
-.bodyWrapper .productWrapper .product-grid .productImage h1 {
+.bodyWrapper .pcProductWrapper .product-grid .productImage h1 {
   padding: 0.5rem 0;
   font-weight: 500;
 }
 
-.bodyWrapper .productWrapper .product-grid .productOX {
+.bodyWrapper .pcProductWrapper .product-grid .productOX {
   padding: 18% 0;
   text-align: center;
   border-bottom: 1px solid #BDBDBD;
 }
 
-.bodyWrapper .productWrapper .product-grid .downloadItem {
+.bodyWrapper .pcProductWrapper .product-grid .downloadItem {
   text-align: center;
 }
 
-.bodyWrapper .productWrapper .product-grid .downloadItem button {
+.bodyWrapper .pcProductWrapper .product-grid .downloadItem button {
   margin-top: 2rem;
   border-radius: 50px;
   border: none;
@@ -118,4 +118,10 @@
 
 .bodyWrapper .productIntro .productItem img {
   width: 40%;
+}
+
+@media screen and (max-width: 1023px) {
+  .pcProductWrapper {
+    display: none;
+  }
 }

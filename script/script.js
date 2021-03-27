@@ -34,6 +34,13 @@ let compImgArr = [
     
 ]
 
+let productArr = [
+    {
+        backgroundUrl: "image/antivirus_free.png",
+        productName: ""
+    }
+]
+
 let ranNum = Math.floor(Math.random()*compImgArr.length);
 
 window.onload = ()=>{
