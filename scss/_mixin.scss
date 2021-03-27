@@ -1,31 +1,30 @@
-@import "./variables";
+$breakpointMobile:359px;
+$breakpointTablet: 767px;
+$breakpointDesktop: 1023px;
+$breakpointWideDesktop: 1599px;
 
-@mixin alldesktop{
+
+@mixin widedesktop{
     @media screen and (min-width: #{$breakpointWideDesktop}){
         @content;
     }
 }
 
-@mixin widedesktop{
+@mixin desktop{
     @media screen and (max-width: #{$breakpointWideDesktop}){
         @content;
     }
 }
 
-@mixin desktop{
-    @media screen and (max-width: #{$breakpointDesktop}){
-        @content;
-    }
-}
 
 @mixin tablet{
-    @media screen and (max-width: #{$breakpointTablet}){
+    @media screen and(max-width: #{$breakpointDesktop}){
         @content;
     }
 }
 
 @mixin mobile{
-    @media screen and (max-width: #{$breakpointMobile}){
+    @media screen and (max-width: #{$breakpointTablet}){
         @content;
     }
 }

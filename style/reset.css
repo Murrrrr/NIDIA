@@ -25,6 +25,7 @@ body::-webkit-scrollbar {
 }
 
 header {
+  height: 5rem;
   position: relative;
   transition: right 0.5s ease;
   display: flex;
@@ -38,6 +39,7 @@ header {
 header .logo {
   display: inline;
   width: 10%;
+  height: 5rem;
 }
 
 header .logo img {
@@ -49,6 +51,7 @@ header .logo img {
 
 header .pcNav {
   width: 60%;
+  height: 5rem;
 }
 
 header .pcNav ul {
@@ -65,6 +68,10 @@ header .pcNav ul li {
 
 header .pcNav ul li a {
   text-align: center;
+  width: 8rem;
+  line-height: 5rem;
+  height: 5rem;
+  font-size: 1rem;
 }
 
 header .pcNav ul li a:hover {
@@ -75,6 +82,10 @@ header .pcNav ul .far {
   margin-left: 1rem;
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+header .mobileNav {
+  display: none;
 }
 
 header .mobileNav .hamburgerMenu {
@@ -120,7 +131,7 @@ header .mobileNav .hamburgerMenu .line::after {
   left: 100%;
   z-index: 8;
   background-color: #fff;
-  width: 50%;
+  width: 50vw;
   transition: left 0.5s ease;
 }
 
@@ -133,25 +144,27 @@ header .mobileNav .hamburgerMenu .line::after {
 .mobileMenu .loginSection span {
   color: #fff;
   text-align: center;
-  width: 4.5rem;
-  padding: 0.5rem 0;
+  width: 40%;
+  padding: 5% 0;
   background-color: #006FD4;
   font-size: 0.8rem;
 }
 
 .mobileMenu ul li {
-  padding: 1rem;
+  padding: 1.5rem 1rem;
 }
 
 .mobileMenu ul li a {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .modal {
+  width: 30vh;
+  height: 10vh;
   display: none;
   position: absolute;
   z-index: 9;
-  top: 15%;
+  top: 13%;
   right: 2%;
   background-color: #fff;
 }
@@ -168,9 +181,12 @@ header .mobileNav .hamburgerMenu .line::after {
 }
 
 .modal .buttonWrapper {
-  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
-  width: 60%;
+  width: 80%;
   justify-content: space-between;
 }
 
@@ -179,6 +195,8 @@ header .mobileNav .hamburgerMenu .line::after {
   color: #fff;
   border: none;
   background-color: #006FD4;
+  width: 45%;
+  padding: 0.5rem 1rem;
 }
 
 .active {
@@ -217,6 +235,7 @@ header .mobileNav .hamburgerMenu .line::after {
 }
 
 footer {
+  height: 8rem;
   position: relative;
   width: 100%;
   display: block;
@@ -224,6 +243,7 @@ footer {
 }
 
 footer .footerWrapper {
+  width: 7%;
   position: relative;
   height: 100%;
   margin: 0 auto;
@@ -233,10 +253,16 @@ footer .footerWrapper {
 }
 
 footer .footerWrapper .infoWrapper {
+  font-size: 0.75rem;
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1600px) {
+footer .footerWrapper .infoWrapper span {
+  font-size: 1em;
+  margin: 0 1em;
+}
+
+@media screen and (min-width: 1599px) {
   header {
     height: 5rem;
   }
@@ -245,12 +271,6 @@ footer .footerWrapper .infoWrapper {
   }
   header .pcNav {
     height: 5rem;
-  }
-  header .pcNav ul li a {
-    width: 8rem;
-    line-height: 5rem;
-    height: 5rem;
-    font-size: 1rem;
   }
   header .mobileNav {
     display: none;
@@ -270,41 +290,7 @@ footer .footerWrapper .infoWrapper {
   }
 }
 
-@media screen and (max-width: 1600px) {
-  header {
-    height: 5rem;
-  }
-  header .logo {
-    height: 5rem;
-  }
-  header .pcNav {
-    height: 5rem;
-  }
-  header .pcNav ul li a {
-    width: 8rem;
-    line-height: 5rem;
-    height: 5rem;
-    font-size: 1rem;
-  }
-  header .mobileNav {
-    display: none;
-  }
-  footer {
-    height: 8rem;
-  }
-  footer .footerWrapper img {
-    width: 7%;
-  }
-  footer .footerWrapper .infoWrapper {
-    font-size: 0.75rem;
-  }
-  footer .footerWrapper .infoWrapper span {
-    font-size: 1em;
-    margin: 0 1em;
-  }
-}
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1599px) {
   header {
     height: 4rem;
   }
@@ -339,7 +325,7 @@ footer .footerWrapper .infoWrapper {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   header .logo {
     width: 20%;
   }
@@ -348,6 +334,60 @@ footer .footerWrapper .infoWrapper {
   }
   header .mobileNav {
     display: block;
+  }
+  .mobileMenu .loginSection span {
+    font-size: 0.9rem;
+  }
+  .mobileMenu ul li {
+    padding: 1.5rem 1rem;
+  }
+  .mobileMenu ul li a {
+    font-size: 1rem;
+  }
+  footer {
+    height: auto;
+    padding: 3rem 0;
+  }
+  footer .footerWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footerWrapper img {
+    margin-bottom: 1rem;
+    top: 0;
+    transform: none;
+    width: 20%;
+    position: relative;
+  }
+  footer .footerWrapper .infoWrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .footerWrapper .infoWrapper span {
+    padding: 0.5rem 0;
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .logo {
+    width: 20%;
+  }
+  header .pcNav {
+    display: none;
+  }
+  header .mobileNav {
+    display: block;
+  }
+  .mobileMenu .loginSection span {
+    font-size: 0.6rem;
+  }
+  .mobileMenu ul li {
+    padding: 1rem;
+  }
+  .mobileMenu ul li a {
+    font-size: 0.8rem;
   }
   footer {
     height: auto;

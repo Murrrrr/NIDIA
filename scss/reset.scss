@@ -28,6 +28,7 @@ body {
 }
 
 header {
+    height: 5rem;
     position:relative;
     transition: right 0.5s ease;
     display: flex;
@@ -40,6 +41,7 @@ header {
     .logo {
         display: inline;
         width: 10%;
+        height: 5rem;
 
         img {
             position: relative;
@@ -51,6 +53,7 @@ header {
 
     .pcNav {
         width: 60%;
+        height: 5rem;
 
         ul {
             display: flex;
@@ -64,6 +67,10 @@ header {
 
                 a {
                     text-align: center;
+                    width: 8rem;
+                    line-height: 5rem;
+                    height: 5rem;
+                    font-size: 1rem;
 
                     &:hover {
                         border-bottom: 5px solid #006FD4;
@@ -82,6 +89,7 @@ header {
     }
 
     .mobileNav {
+        display: none;
 
         .hamburgerMenu {
             position: relative;
@@ -132,18 +140,19 @@ header {
     left: 100%;
     z-index: 8;
     background-color: #fff;
-    width: 50%;
+    width: 50vw;
     transition: left 0.5s ease;
 
     .loginSection{
         padding: 1rem;
         display:flex;
         justify-content:space-between ;
+
         span{
             color: #fff;
             text-align: center;
-            width: 4.5rem;
-            padding: 0.5rem 0;
+            width: 40%;
+            padding: 5% 0;
             background-color:#006FD4;
             font-size: 0.8rem;
         }
@@ -151,19 +160,21 @@ header {
 
     ul{
         li{
-            padding: 1rem;
+            padding:  1.5rem 1rem;
             a{
-                font-size: 0.8rem;
+                font-size: 1rem;
             }
         }
     }
 }
 
 .modal {
+    width: 30vh;
+    height: 10vh;
     display: none;
     position: absolute;
     z-index: 9;
-    top: 15%;
+    top: 13%;
     right: 2%;
     background-color: #fff;
 
@@ -179,9 +190,12 @@ header {
     }
 
     .buttonWrapper {
-        margin: 0 auto;
+        position:relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: flex;
-        width: 60%;
+        width: 80%;
         justify-content: space-between;
 
         button {
@@ -189,6 +203,8 @@ header {
             color: #fff;
             border: none;
             background-color: #006FD4;
+            width: 45%;
+            padding: 0.5rem 1rem;
         }
     }
 }
@@ -232,6 +248,7 @@ header {
 }
 
 footer {
+    height: 8rem;
     position: relative;
     width: 100%;
     display: block;
@@ -240,6 +257,7 @@ footer {
 
 
     .footerWrapper {
+        width: 7%;
         position: relative;
         height: 100%;
         margin: 0 auto;
@@ -248,63 +266,18 @@ footer {
         align-items: center;
 
         .infoWrapper {
+            font-size: 0.75rem;
             margin: 0 auto;
+
+            span {
+                font-size: 1em;
+                margin: 0 1em;
+            }
         }
 
     }
 }
 
-@include alldesktop{
-    $headerHeight: 5rem;
-
-    header {
-        height: #{$headerHeight};
-
-        .logo {
-            height: #{$headerHeight};
-        }
-
-        .pcNav {
-            height: #{$headerHeight};
-
-            ul {
-                li {
-                    a {
-                        width: 8rem;
-                        line-height: #{$headerHeight};
-                        height: #{$headerHeight};
-                        font-size: 1rem;
-                    }
-                }
-            }
-        }
-
-        .mobileNav {
-            display: none;
-        }
-
-    }
-
-    footer {
-        height: 8rem;
-
-        .footerWrapper {
-            img{
-                width: 7%;
-            }
-            
-            .infoWrapper {
-                font-size: 0.75rem;
-
-                span {
-                    font-size: 1em;
-                    margin: 0 1em;
-                }
-            }
-        }
-    }
-
-}
 
 @include widedesktop {
     $headerHeight: 5rem;
@@ -318,17 +291,6 @@ footer {
 
         .pcNav {
             height: #{$headerHeight};
-
-            ul {
-                li {
-                    a {
-                        width: 8rem;
-                        line-height: #{$headerHeight};
-                        height: #{$headerHeight};
-                        font-size: 1rem;
-                    }
-                }
-            }
         }
 
         .mobileNav {
@@ -415,7 +377,6 @@ footer {
 @include tablet {
 
     header {
-
         .logo {
             width: 20%;
         }
@@ -428,6 +389,23 @@ footer {
             display: block;
         }
 
+    }
+
+    .mobileMenu{ 
+        .loginSection{
+            span{
+                font-size: 0.9rem;
+            }
+        }
+    
+        ul{
+            li{
+                padding:  1.5rem 1rem;
+                a{
+                    font-size: 1rem;
+                }
+            }
+        }
     }
 
     footer {
@@ -460,3 +438,71 @@ footer {
     }
 
 }
+
+@include mobile {
+
+    header {
+        .logo {
+            width: 20%;
+        }
+
+        .pcNav {
+            display: none;
+        }
+
+        .mobileNav {
+            display: block;
+        }
+
+    }
+
+    .mobileMenu{
+        
+        .loginSection{
+    
+            span{
+                font-size: 0.6rem;
+            }
+        }
+    
+        ul{
+            li{
+                padding: 1rem;
+                a{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+    footer {
+        height: auto;
+        padding: 3rem 0;
+
+        .footerWrapper {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                margin-bottom: 1rem;
+                top: 0;
+                transform: none;
+                width: 20%;
+                position: relative;
+            }
+
+            .infoWrapper {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                span {
+                    padding: 0.5rem 0;
+                    font-size: 0.5em;
+                }
+            }
+        }
+    }
+
+}
+
