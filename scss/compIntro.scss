@@ -162,3 +162,49 @@
     }
 
 }
+
+@include mobile{
+    .bodyWrapper{
+
+        .contentsWrapper{
+            margin: 5% auto;
+    
+            .contentsLogo{
+                width: 40%;
+            }
+    
+            p{
+                width: 80%;
+                font-size: 1rem;
+                line-height: 2.5rem;
+    
+                strong{
+                    font-size: 1rem;
+                }
+            }
+    
+            .iconWrapper{
+    
+                .iconContainer{
+                    margin: 5% 0;
+    
+                    img{
+                        width: 10%;
+                    }
+    
+                    h1{
+                        margin: 3% 0;
+                        font-size: 1.2rem;
+                    }
+    
+                    h2{
+                        font-size: 1rem;
+                        font-weight: 500;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}

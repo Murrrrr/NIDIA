@@ -390,6 +390,19 @@ footer .footerWrapper .infoWrapper span {
   header .mobileNav {
     display: block;
   }
+  .introWrapper {
+    height: 30vh;
+  }
+  .introWrapper .introInfo {
+    width: 100%;
+    text-align: center;
+  }
+  .introWrapper .introInfo h1 {
+    font-size: 1.2rem;
+  }
+  .introWrapper .introInfo strong {
+    font-size: 1.2rem;
+  }
   .mobileMenu .loginSection span {
     font-size: 0.6rem;
   }

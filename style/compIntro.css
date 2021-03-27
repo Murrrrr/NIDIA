@@ -127,3 +127,34 @@
     font-weight: 500;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .bodyWrapper .contentsWrapper {
+    margin: 5% auto;
+  }
+  .bodyWrapper .contentsWrapper .contentsLogo {
+    width: 40%;
+  }
+  .bodyWrapper .contentsWrapper p {
+    width: 80%;
+    font-size: 1rem;
+    line-height: 2.5rem;
+  }
+  .bodyWrapper .contentsWrapper p strong {
+    font-size: 1rem;
+  }
+  .bodyWrapper .contentsWrapper .iconWrapper .iconContainer {
+    margin: 5% 0;
+  }
+  .bodyWrapper .contentsWrapper .iconWrapper .iconContainer img {
+    width: 10%;
+  }
+  .bodyWrapper .contentsWrapper .iconWrapper .iconContainer h1 {
+    margin: 3% 0;
+    font-size: 1.2rem;
+  }
+  .bodyWrapper .contentsWrapper .iconWrapper .iconContainer h2 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

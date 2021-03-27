@@ -472,6 +472,24 @@ footer {
 
     }
 
+    .introWrapper {
+        height: 30vh;
+    
+        .introInfo {
+            width: 100%;
+            text-align: center;
+    
+            h1 {
+                font-size: 1.2rem;
+            }
+    
+            strong {
+                font-size: 1.2rem;
+            }
+    
+        }
+    }
+
     .mobileMenu{
         
         .loginSection{
