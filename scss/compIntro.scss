@@ -1,7 +1,9 @@
+@import "./mixin";
+
+
 .bodyWrapper{
     width: 100%;
     margin-bottom: 10%;
-
 
 
     .contentsWrapper{
@@ -57,4 +59,106 @@
             }
         }
     }
+}
+
+@include desktop {
+    .bodyWrapper{
+
+        .contentsWrapper{
+            margin: 5% auto;
+    
+            .contentsLogo{
+                width: 15%;
+            }
+    
+            p{
+                width: 70%;
+                margin: 5% auto;
+                text-align: center;
+                font-size: 1rem;
+                word-break: keep-all;
+                line-height: 3rem;
+    
+                strong{
+                    color: #0068AB;
+                    font-size: 1rem;
+                }
+            }
+    
+            .iconWrapper{
+    
+                .iconContainer{
+    
+                    img{
+                        width: 22%;
+                    }
+    
+                    h1{
+                        margin: 5% 0;
+                        font-size: 1rem;
+                    }
+    
+                    h2{
+                        font-size: 0.8rem;
+                        font-weight: 500;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@include tablet{
+    .bodyWrapper{
+
+        .contentsWrapper{
+            margin: 5% auto;
+    
+            .contentsLogo{
+                width: 25%;
+            }
+    
+            p{
+                width: 70%;
+                margin: 5% auto;
+                text-align: center;
+                font-size: 1rem;
+                word-break: keep-all;
+                line-height: 3rem;
+    
+                strong{
+                    color: #0068AB;
+                    font-size: 1rem;
+                }
+            }
+    
+            .iconWrapper{
+
+                display:flex;
+                flex-direction: column;
+    
+                .iconContainer{
+                    width: 100vw;
+                    margin: 5% 0;
+    
+                    img{
+                        width: 15%;
+                    }
+    
+                    h1{
+                        margin: 3% 0;
+                        font-size: 1.2rem;
+                    }
+    
+                    h2{
+                        font-size: 1rem;
+                        font-weight: 500;
+                    }
+                    
+                }
+            }
+        }
+    }
+
 }

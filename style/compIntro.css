@@ -55,3 +55,75 @@
   font-size: 1rem;
   font-weight: 500;
 }
+
+@media screen and (max-width: 1599px) {
+  .bodyWrapper .contentsWrapper {
+    margin: 5% auto;
+  }
+  .bodyWrapper .contentsWrapper .contentsLogo {
+    width: 15%;
+  }
+  .bodyWrapper .contentsWrapper p {
+    width: 70%;
+    margin: 5% auto;
+    text-align: center;
+    font-size: 1rem;
+    word-break: keep-all;
+    line-height: 3rem;
+  }
+  .bodyWrapper .contentsWrapper p strong {
+    color: #0068AB;
+    font-size: 1rem;
+  }
+  .bodyWrapper .contentsWrapper .iconWrapper .iconContainer img {
+    width: 22%;
+  }
+  .bodyWrapper .contentsWrapper .iconWrapper .iconContainer h1 {
+    margin: 5% 0;
+    font-size: 1rem;
+  }
+  .bodyWrapper .contentsWrapper .iconWrapper .iconContainer h2 {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .bodyWrapper .contentsWrapper {
+    margin: 5% auto;
+  }
+  .bodyWrapper .contentsWrapper .contentsLogo {
+    width: 25%;
+  }
+  .bodyWrapper .contentsWrapper p {
+    width: 70%;
+    margin: 5% auto;
+    text-align: center;
+    font-size: 1rem;
+    word-break: keep-all;
+    line-height: 3rem;
+  }
+  .bodyWrapper .contentsWrapper p strong {
+    color: #0068AB;
+    font-size: 1rem;
+  }
+  .bodyWrapper .contentsWrapper .iconWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .bodyWrapper .contentsWrapper .iconWrapper .iconContainer {
+    width: 100vw;
+    margin: 5% 0;
+  }
+  .bodyWrapper .contentsWrapper .iconWrapper .iconContainer img {
+    width: 15%;
+  }
+  .bodyWrapper .contentsWrapper .iconWrapper .iconContainer h1 {
+    margin: 3% 0;
+    font-size: 1.2rem;
+  }
+  .bodyWrapper .contentsWrapper .iconWrapper .iconContainer h2 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

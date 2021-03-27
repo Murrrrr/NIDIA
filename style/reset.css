@@ -312,6 +312,15 @@ footer .footerWrapper .infoWrapper span {
   header .mobileNav {
     display: none;
   }
+  .introWrapper {
+    height: 30vh;
+  }
+  .introWrapper .introInfo h1 {
+    font-size: 1.5rem;
+  }
+  .introWrapper .introInfo strong {
+    font-size: 1.5rem;
+  }
   footer {
     height: 8rem;
     height: 6rem;
@@ -360,13 +369,14 @@ footer .footerWrapper .infoWrapper span {
     position: relative;
   }
   footer .footerWrapper .infoWrapper {
+    font-size: 0.75rem;
     display: flex;
     flex-direction: column;
     text-align: center;
   }
   footer .footerWrapper .infoWrapper span {
     padding: 0.5rem 0;
-    font-size: 0.5em;
+    font-size: 1em;
   }
 }
 
@@ -411,6 +421,5 @@ footer .footerWrapper .infoWrapper span {
   }
   footer .footerWrapper .infoWrapper span {
     padding: 0.5rem 0;
-    font-size: 0.5em;
   }
 }

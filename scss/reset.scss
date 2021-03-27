@@ -355,6 +355,22 @@ footer {
 
     }
 
+    .introWrapper {
+        height: 30vh;
+    
+        .introInfo {
+    
+            h1 {
+                font-size: 1.5rem;
+            }
+    
+            strong {
+                font-size: 1.5rem;
+            }
+    
+        }
+    }
+
     footer {
         height: 8rem;
 
@@ -425,18 +441,18 @@ footer {
             }
 
             .infoWrapper {
+                font-size: 0.75rem;
                 display: flex;
                 flex-direction: column;
                 text-align: center;
 
                 span {
                     padding: 0.5rem 0;
-                    font-size: 0.5em;
+                    font-size: 1em;
                 }
             }
         }
     }
-
 }
 
 @include mobile {
@@ -498,7 +514,6 @@ footer {
 
                 span {
                     padding: 0.5rem 0;
-                    font-size: 0.5em;
                 }
             }
         }
