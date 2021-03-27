@@ -313,7 +313,7 @@ footer .footerWrapper .infoWrapper span {
     display: none;
   }
   .introWrapper {
-    height: 30vh;
+    height: 50vh;
   }
   .introWrapper .introInfo h1 {
     font-size: 1.5rem;
@@ -343,6 +343,19 @@ footer .footerWrapper .infoWrapper span {
   }
   header .mobileNav {
     display: block;
+  }
+  .introWrapper {
+    height: 30vh;
+  }
+  .introWrapper .introInfo {
+    width: 100%;
+    text-align: center;
+  }
+  .introWrapper .introInfo h1 {
+    font-size: 1.5rem;
+  }
+  .introWrapper .introInfo strong {
+    font-size: 1.5rem;
   }
   .mobileMenu .loginSection span {
     font-size: 0.9rem;

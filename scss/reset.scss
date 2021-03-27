@@ -356,7 +356,7 @@ footer {
     }
 
     .introWrapper {
-        height: 30vh;
+        height: 50vh;
     
         .introInfo {
     
@@ -405,6 +405,24 @@ footer {
             display: block;
         }
 
+    }
+
+    .introWrapper {
+        height: 30vh;
+    
+        .introInfo {
+            width: 100%;
+            text-align: center;
+    
+            h1 {
+                font-size: 1.5rem;
+            }
+    
+            strong {
+                font-size: 1.5rem;
+            }
+    
+        }
     }
 
     .mobileMenu{ 
