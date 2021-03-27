@@ -9,25 +9,25 @@ const mobileMenu = document.querySelector('.mobileMenu');
 
 let compImgArr = [
     {
-        backgroundUrl: "../image/compIntro.jpg",
+        backgroundUrl: "image/compIntro.jpg",
         positionY: "20%",
         introInfo: "안전을 최우선으로 생각합니다."
     },
 
     {
-        backgroundUrl: "/image/compIntro2.jpg",
+        backgroundUrl: "image/compIntro2.jpg",
         positionY: "40%",
         introInfo: "세계의 PC가 안전해지는 그날까지."
     },
 
     {
-        backgroundUrl: "/image/compIntro3.jpg",
+        backgroundUrl: "image/compIntro3.jpg",
         positionY: "60%",
         introInfo: "PC를 안전하게 지키고 싶다면."
     },
 
     {
-        backgroundUrl: "/image/compIntro4.jpg",
+        backgroundUrl: "image/compIntro4.jpg",
         positionY: "40%",
         introInfo: "전세계 5억명이 사용하는 백신 프로그램."
     }
