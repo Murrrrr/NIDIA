@@ -14,11 +14,9 @@
 <body>
 
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="image/nidiaLogo4.png" alt="headerLogo"></a>
-        </div>
+        <a class="logo" href="index.html"><img src="image/nidiaLogo4.png" alt="headerLogo"></a>
 
-        <nav>
+        <nav class="pcNav">
             <ul>
                 <li><a href="index.html">홈</a></li>
                 <li><a href="compIntro.html">기업 소개</a></li>
@@ -27,19 +25,34 @@
                 <li><i class="far fa-user"></i></i></li>
             </ul>
         </nav>
+
+        <div class="mobileNav">
+            <div class="hamburgerMenu">
+                <span class="line"></span>
+            </div>
+        </div>
     </header>
 
-    <div class="modal">
-        <div class="loginWrapper">
-            <input type="text" id="id" placeholder="ID">
-            <input type="text" id="password" placeholder="PASSWORD">
+    <div class="mobileMenu">
+        <div class="loginSection">
+            <span>로그인</span>
+            <span>회원가입</span>
         </div>
 
+        <ul>
+            <li><a href="index.html">홈</a></li>
+            <li><a href="compIntro.html">기업 소개</a></li>
+            <li><a href="product.html">제품 안내</a></li>
+            <li><a href="contact.html">고객 지원</a></li>
+            <li><i class="fas fa-arrow-left"></i></li>
+        </ul>
+    </div>
+
+    <div class="modal">
         <div class="buttonWrapper">
             <button>로그인</button>
             <button>회원가입</button>
         </div>
-        
     </div>
 
     <div class="bodyWrapper">
