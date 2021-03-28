@@ -7,6 +7,11 @@ const bodyWrapper = document.querySelector('.bodyWrapper');
 const header = document.querySelector('header');
 const mobileMenu = document.querySelector('.mobileMenu');
 
+const mobileImgSection = document.querySelector('.mobileProductWrapper .imgSection');
+const mobileName = document.querySelector('.mobileProductWrapper h2');
+const mobilePrice = document.querySelector('.mobileProductWrapper .productPrice');
+const mobileBtn = document.querySelector('.mobileProductWrapper .purchaseBtn');
+
 let compImgArr = [
     {
         backgroundUrl: "image/compIntro.jpg",
@@ -37,7 +42,23 @@ let compImgArr = [
 let productArr = [
     {
         backgroundUrl: "image/antivirus_free.png",
-        productName: ""
+        productName: "안티 바이러스 프리",
+        productPrice: "* 이 제품은 PC 전용입니다.",
+        btn: "다운로드"
+    },
+
+    {
+        backgroundUrl: "image/antivirus_premium.png",
+        productName: "안티 바이러스 프리미엄",
+        productPrice: "24,000 원",
+        btn: "구매"
+    },
+
+    {
+        backgroundUrl: "image/antivirus_ultimate.png",
+        productName: "안티 바이러스 프리",
+        productPrice: "36,000 원",
+        btn: "구매"
     }
 ]
 
@@ -85,6 +106,17 @@ window.onload = ()=>{
         introImage.style.backgroundImage = `url(${compImgArr[ranNum].backgroundUrl})`;
         introImage.style.backgroundPositionY = `${compImgArr[ranNum].positionY}`;
         introInfoH1.innerHTML = compImgArr[ranNum].introInfo;
+    }
+
+    if(document.querySelector('.mobileProductWrapper') == null){
+        return 0;
+    }
+
+    else{
+        mobileImgSection.style.backgroundImage = `url(${productArr[0].backgroundUrl})`;
+        mobileName.innerHTML = productArr[0].productName;
+        mobilePrice.innerHTML = productArr[0].productPrice;
+        mobileBtn.innerHTML = productArr[0].btn;
     }
 
     

@@ -63,6 +63,72 @@
   color: #fff;
 }
 
+.bodyWrapper .mobileProductWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.bodyWrapper .mobileProductWrapper .productWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10% 0;
+}
+
+.bodyWrapper .mobileProductWrapper .productWrapper .imgSection {
+  width: 36%;
+  background-size: cover;
+}
+
+.bodyWrapper .mobileProductWrapper .productWrapper .productInfoWrapper {
+  width: 45%;
+}
+
+.bodyWrapper .mobileProductWrapper .productWrapper .productInfoWrapper .productName {
+  margin: 1rem 0;
+}
+
+.bodyWrapper .mobileProductWrapper .productWrapper .productInfoWrapper .productName h1 {
+  font-size: 0.9rem;
+}
+
+.bodyWrapper .mobileProductWrapper .productWrapper .productInfoWrapper .productName h2 {
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.bodyWrapper .mobileProductWrapper .productWrapper .productInfoWrapper .productPrice {
+  font-size: 0.6rem;
+}
+
+.bodyWrapper .mobileProductWrapper .productWrapper .productInfoWrapper .purchaseBtn {
+  display: inline-block;
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #006FD4;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.bodyWrapper .mobileProductWrapper .buttonWrapper button {
+  margin-right: 0.5rem;
+  background-color: transparent;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 0.5rem 0;
+  font-size: 0.7rem;
+  width: 5rem;
+  border: 1px solid #006FD4;
+  color: #006FD4;
+}
+
+.bodyWrapper .mobileProductWrapper .buttonWrapper .active {
+  background-color: #006FD4;
+  color: #fff;
+}
+
 .bodyWrapper .productIntro {
   padding: 10rem 0;
   width: 100%;

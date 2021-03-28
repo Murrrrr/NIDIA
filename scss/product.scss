@@ -65,6 +65,77 @@
         }
     }
 
+    .mobileProductWrapper{
+        width: 80%;
+        margin: 0 auto;
+
+        .productWrapper{
+            display:flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10% 0;
+
+            .imgSection{
+                width: 36%;
+                background-size: cover;
+            }
+
+            .productInfoWrapper{
+                width: 45%;
+
+                .productName{
+                    margin: 1rem 0;
+
+                    h1{
+                        font-size: 0.9rem;
+                    }
+    
+                    h2{
+                        margin: 0.5rem 0;
+                        font-size: 0.8rem;
+                        font-weight: 500;
+                    }
+
+                }
+
+                .productPrice{
+                    font-size: 0.6rem;
+                }
+
+                .purchaseBtn{
+                    display: inline-block;
+                    margin: 1rem 0;
+                    font-size: 0.8rem;
+                    padding: 0.5rem 1.5rem;
+                    background-color: #006FD4;
+                    color: #fff;
+                    border-radius: 10px;
+                }
+
+
+            }
+        }
+
+        .buttonWrapper{
+            button{
+                margin-right: 0.5rem;
+                background-color: transparent;
+                border-radius: 10px;
+                display:inline-block;
+                padding: 0.5rem 0;
+                font-size: 0.7rem;
+                width: 5rem;
+                border: 1px solid #006FD4;
+                color: #006FD4;
+            }
+
+            .active{
+                background-color: #006FD4;
+                color: #fff;
+            }
+        }
+    }
+
     .productIntro{
         padding: 10rem 0;
         width: 100%;
