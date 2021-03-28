@@ -11,6 +11,7 @@ const mobileImgSection = document.querySelector('.mobileProductWrapper .imgSecti
 const mobileName = document.querySelector('.mobileProductWrapper h2');
 const mobilePrice = document.querySelector('.mobileProductWrapper .productPrice');
 const mobileBtn = document.querySelector('.mobileProductWrapper .purchaseBtn');
+const productBtn = document.querySelectorAll('.mobileProductWrapper .buttonWrapper button');
 
 let compImgArr = [
     {
@@ -56,7 +57,7 @@ let productArr = [
 
     {
         backgroundUrl: "image/antivirus_ultimate.png",
-        productName: "안티 바이러스 프리",
+        productName: "안티 바이러스 얼티메이트",
         productPrice: "36,000 원",
         btn: "구매"
     }
@@ -118,6 +119,32 @@ window.onload = ()=>{
         mobilePrice.innerHTML = productArr[0].productPrice;
         mobileBtn.innerHTML = productArr[0].btn;
     }
+
+    let max=productBtn.length;
+
+    for(let i=0;  i<max; i++){
+
+        productBtn[i].addEventListener('click',()=>{
+            
+            for(let j=0; j<max; j++){
+                productBtn[j].classList.remove('active');
+            }
+            
+            productBtn[i].classList.add('active');
+
+            if(productBtn[i].classList.contains('active') == true){
+                mobileImgSection.src = `${productArr[i].backgroundUrl}`;
+                mobileName.innerHTML = productArr[i].productName;
+                mobilePrice.innerHTML = productArr[i].productPrice;
+                mobileBtn.innerHTML = productArr[i].btn;
+            }
+
+            
+        })
+
+    }
+
+
 
     
 }

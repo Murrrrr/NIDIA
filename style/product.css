@@ -93,12 +93,12 @@
 }
 
 .bodyWrapper .mobileProductWrapper .productWrapper .productInfoWrapper .productName h1 {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .bodyWrapper .mobileProductWrapper .productWrapper .productInfoWrapper .productName h2 {
   margin: 0.5rem 0;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 
@@ -109,6 +109,8 @@
 .bodyWrapper .mobileProductWrapper .productWrapper .productInfoWrapper .purchaseBtn {
   display: inline-block;
   margin: 1rem 0;
+  text-align: center;
+  width: 6rem;
   font-size: 0.8rem;
   padding: 0.5rem 1.5rem;
   background-color: #006FD4;
