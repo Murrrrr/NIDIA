@@ -13,6 +13,8 @@ const mobilePrice = document.querySelector('.mobileProductWrapper .productPrice'
 const mobileBtn = document.querySelector('.mobileProductWrapper .purchaseBtn');
 const productBtn = document.querySelectorAll('.mobileProductWrapper .buttonWrapper button');
 
+const productInfoWrapper = document.querySelector('.mobileProductWrapper .productInfo');
+
 let compImgArr = [
     {
         backgroundUrl: "image/compIntro.jpg",
@@ -45,21 +47,43 @@ let productArr = [
         backgroundUrl: "image/antivirus_free.png",
         productName: "안티 바이러스 프리",
         productPrice: "* 이 제품은 PC 전용입니다.",
-        btn: "다운로드"
+        btn: "다운로드",
     },
 
     {
         backgroundUrl: "image/antivirus_premium.png",
         productName: "안티 바이러스 프리미엄",
         productPrice: "24,000 원",
-        btn: "구매"
+        btn: "구매",
+        
     },
 
     {
         backgroundUrl: "image/antivirus_ultimate.png",
         productName: "안티 바이러스 얼티메이트",
         productPrice: "36,000 원",
-        btn: "구매"
+        btn: "구매",
+        
+    }
+]
+
+let productInfoArr = [
+    {
+        productInfo1: " 무료로 프로그램을 이용하시고 내 PC를 안전하게 지켜내세요.",
+        productInfo2: " 실시간 감시와 정밀 검사로 바이러스의 위협을 차단하세요.",
+        productInfo3: " 랜섬웨어 차단을 통해 소중한 파일들을 해커로부터 보호합니다."
+    },
+
+    {
+        productInfo1: " 실시간 감시와 정밀 검사로 바이러스의 위협을 차단하세요.",
+        productInfo2: " 랜섬웨어 차단을 통해 소중한 파일들을 해커로부터 보호합니다",
+        productInfo3: " 인터넷 실시간 보호로 피싱사이트로 의심되는 사이트 접속을 차단합니다."
+    },
+
+    {
+        productInfo1: " 안티 바이러스 프리미엄 기능을 모두 누릴 수 있습니다.",
+        productInfo2: " 애드웨어 검사를 통해 PC를 안전하게 지켜냅니다.",
+        productInfo3: " 최대 4대의 컴퓨터에 프로그램 등록이 가능합니다."
     }
 ]
 
@@ -68,7 +92,6 @@ let ranNum = Math.floor(Math.random()*compImgArr.length);
 window.onload = ()=>{
     
     myPage.addEventListener('click', ()=>{
-        console.log(loginModal.classList.contains('active'));
         if(loginModal.classList.contains('active') === true){
             loginModal.classList.remove('active');
         }
@@ -109,24 +132,37 @@ window.onload = ()=>{
         introInfoH1.innerHTML = compImgArr[ranNum].introInfo;
     }
 
+    let info1 = document.createElement("p");
+    let check = document.createElement("i");
+    let info1_content = document.createTextNode(productInfoArr[0].productInfo1);
+
+    check.className = "fas fa-check";
+
+    info1.append(check)
+    info1.append(info1_content);
+
+
     if(document.querySelector('.mobileProductWrapper') == null){
         return 0;
     }
 
+    
     else{
         mobileImgSection.src = `${productArr[0].backgroundUrl}`;
         mobileName.innerHTML = productArr[0].productName;
         mobilePrice.innerHTML = productArr[0].productPrice;
         mobileBtn.innerHTML = productArr[0].btn;
+
     }
 
-    let max=productBtn.length;
+    let btnMax=productBtn.length;
 
-    for(let i=0;  i<max; i++){
+    for(let i=0;  i<btnMax; i++){
+
 
         productBtn[i].addEventListener('click',()=>{
             
-            for(let j=0; j<max; j++){
+            for(let j=0; j<btnMax; j++){
                 productBtn[j].classList.remove('active');
             }
             
@@ -139,6 +175,7 @@ window.onload = ()=>{
                 mobileBtn.innerHTML = productArr[i].btn;
             }
 
+            infoReplace(i);
             
         })
 
@@ -147,6 +184,32 @@ window.onload = ()=>{
 
 
     
+}
+
+function infoReplace(j){
+
+    let infoArray = [];
+    let checkArray = [];
+    let contentArray = [];
+    const productInfo = document.querySelectorAll('.mobileProductWrapper .productInfo p');
+
+    contentArray[0] = document.createTextNode(productInfoArr[j].productInfo1);
+    contentArray[1] = document.createTextNode(productInfoArr[j].productInfo2);
+    contentArray[2] = document.createTextNode(productInfoArr[j].productInfo3);
+    
+
+
+    for(let i = 0; i<3; i++){
+        infoArray[i] = document.createElement("p");
+        checkArray[i] = document.createElement("i");
+        checkArray[i].className = "fas fa-check";
+
+        infoArray[i].append(checkArray[i]);
+        infoArray[i].append(contentArray[i]);
+
+        productInfoWrapper.replaceChild(infoArray[i], productInfo[i]);
+    }
+
 }
 
 function mobileMenuOpen(){
