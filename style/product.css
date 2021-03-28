@@ -71,13 +71,17 @@
 .bodyWrapper .mobileProductWrapper .productWrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 10% 0;
 }
 
 .bodyWrapper .mobileProductWrapper .productWrapper .imgSection {
-  width: 36%;
-  background-size: cover;
+  width: 40%;
+}
+
+.bodyWrapper .mobileProductWrapper .productWrapper .imgSection img {
+  width: 100%;
 }
 
 .bodyWrapper .mobileProductWrapper .productWrapper .productInfoWrapper {

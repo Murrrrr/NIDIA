@@ -7,7 +7,7 @@ const bodyWrapper = document.querySelector('.bodyWrapper');
 const header = document.querySelector('header');
 const mobileMenu = document.querySelector('.mobileMenu');
 
-const mobileImgSection = document.querySelector('.mobileProductWrapper .imgSection');
+const mobileImgSection = document.querySelector('.mobileProductWrapper .imgSection #product');
 const mobileName = document.querySelector('.mobileProductWrapper h2');
 const mobilePrice = document.querySelector('.mobileProductWrapper .productPrice');
 const mobileBtn = document.querySelector('.mobileProductWrapper .purchaseBtn');
@@ -113,7 +113,7 @@ window.onload = ()=>{
     }
 
     else{
-        mobileImgSection.style.backgroundImage = `url(${productArr[0].backgroundUrl})`;
+        mobileImgSection.src = `${productArr[0].backgroundUrl}`;
         mobileName.innerHTML = productArr[0].productName;
         mobilePrice.innerHTML = productArr[0].productPrice;
         mobileBtn.innerHTML = productArr[0].btn;
