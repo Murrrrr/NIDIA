@@ -89,12 +89,12 @@
     background-color: #006FD4;
     padding: 0.5rem;
     color: #fff;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .noticeWrapper .mobileTableContents .tableItem {
     border-bottom: 1px solid #ddd;
     padding: 1rem 0.5rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .noticeWrapper .mobileTableContents .tableItem .imp {
     margin-right: 1rem;
