@@ -305,6 +305,10 @@
     padding: 1.5rem 2rem;
     width: 100%;
     background-color: #fff;
+    margin-bottom: 1rem;
+  }
+  .contactWrapper .faqWrapper .faqSection .faqContainer .faqItem:last-child {
+    margin-bottom: 0;
   }
   .contactWrapper .faqWrapper .faqSection .faqContainer .faqItem h1 {
     font-size: 1.2rem;
@@ -321,6 +325,9 @@
     flex-direction: column;
     align-items: center;
   }
+  .contactWrapper .mtomWrapper .mtomContainer #chatSection {
+    margin-bottom: 0;
+  }
   .contactWrapper .mtomWrapper .mtomContainer #chatSection h2 {
     color: #006FD4;
     cursor: pointer;
@@ -330,6 +337,7 @@
     padding: 1rem 1rem;
     background-color: #f7f7f7;
     text-align: center;
+    margin-bottom: 1rem;
   }
   .contactWrapper .mtomWrapper .mtomContainer .mtomSection i {
     padding: 2rem 0;

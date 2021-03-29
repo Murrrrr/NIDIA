@@ -355,6 +355,11 @@
                         padding: 1.5rem 2rem;
                         width: 100%;
                         background-color: #fff;
+                        margin-bottom: 1rem;
+
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
 
                         h1 {
                             font-size: 1.2rem;
@@ -376,9 +381,6 @@
 
         .mtomWrapper {
 
-            h1 {
-            }
-
             .mtomContainer {
                 margin: 3rem 0;
                 display: flex;
@@ -386,7 +388,7 @@
                 align-items: center;
 
                 #chatSection {
-
+                    margin-bottom: 0;
                     h2 {
                         color: #006FD4;
                         cursor: pointer;
@@ -399,6 +401,7 @@
                     padding: 1rem 1rem;
                     background-color: #f7f7f7;
                     text-align: center;
+                    margin-bottom: 1rem;
 
                     i {
                         padding: 2rem 0;
@@ -410,7 +413,6 @@
                     }
 
                     h2 {
-
                         display: flex;
                         align-items: center;
                         justify-content: center;
