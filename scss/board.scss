@@ -13,6 +13,10 @@
         padding: 2rem 0;
     }
 
+    .mobileTableContents{
+        display:none;
+    }
+
     .pcTableContents{
         margin-top: 2rem;
         display:grid;
@@ -66,6 +70,78 @@
             background-color: #006FD4;
         }
     }
+}
+
+@include tablet{
+
+    .noticeWrapper{
+        width: 85%;
+        margin: 5rem auto;
+    
+        h1{
+            font-size: 1.2rem;
+        }
+    
+        h2{
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 1rem 0;
+        }
+    
+        .pcTableContents{
+            display:none;
+        }
+
+        .mobileTableContents{
+            margin-top: 2rem;
+
+            .tableClassifi{
+                background-color: #006FD4;
+                padding: 1rem;
+                color: #fff;
+                font-size: 1rem;
+            }
+
+            .tableItem{
+                border-bottom: 1px solid #ddd;
+                a{
+                    padding: 1.5rem 0.5rem;
+                    font-size: 1rem;
+
+                    .imp{
+                        margin-right: 1rem;
+                        font-size: 0.9rem;
+                        background-color: #FF6D0C;
+                        font-weight: 700;
+                        color: #fff;
+                        padding: 0.5rem 1rem;
+                    }
+    
+                    .date{
+                        float:right;
+                        line-height: 1.6rem;
+                        font-size: 0.8rem;
+                    }
+                }
+
+            }
+        }
+    
+        .pageNumberWrapper{
+            margin-top: 1.5rem;
+            text-align: center;
+    
+            .pageNumber{
+                display: inline-block;
+                color: #fff;
+                width: 2rem;
+                height: 2rem;
+                line-height: 2rem;
+                background-color: #006FD4;
+            }
+        }
+    }
+
 }
 
 @include mobile{
