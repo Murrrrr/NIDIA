@@ -12,34 +12,34 @@
   padding: 2rem 0;
 }
 
-.noticeWrapper .tableContents {
+.noticeWrapper .pcTableContents {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: 60% 20% 20%;
   justify-content: space-between;
 }
 
-.noticeWrapper .tableContents .tableClassifi {
+.noticeWrapper .pcTableContents .tableClassifi {
   text-align: center;
   color: #fff;
   padding: 1.2rem;
   background-color: #006FD4;
 }
 
-.noticeWrapper .tableContents #tableSub {
+.noticeWrapper .pcTableContents #tableSub {
   border-right: 3px solid #fff;
 }
 
-.noticeWrapper .tableContents #tableDate {
+.noticeWrapper .pcTableContents #tableDate {
   border-right: 3px solid #fff;
 }
 
-.noticeWrapper .tableContents .tableItem {
+.noticeWrapper .pcTableContents .tableItem {
   padding: 1.5rem 1rem;
   border-bottom: 1px solid #C5C5C5;
 }
 
-.noticeWrapper .tableContents .tableItem span {
+.noticeWrapper .pcTableContents .tableItem .imp {
   margin-right: 1rem;
   font-size: 0.9rem;
   background-color: #FF6D0C;
@@ -48,7 +48,7 @@
   padding: 0.5rem 1rem;
 }
 
-.noticeWrapper .tableContents .date, .noticeWrapper .tableContents .view {
+.noticeWrapper .pcTableContents .date, .noticeWrapper .pcTableContents .view {
   text-align: center;
 }
 
@@ -64,4 +64,60 @@
   height: 2rem;
   line-height: 2rem;
   background-color: #006FD4;
+}
+
+@media screen and (max-width: 767px) {
+  .noticeWrapper {
+    width: 75%;
+    margin: 5rem auto;
+  }
+  .noticeWrapper h1 {
+    font-size: 1rem;
+  }
+  .noticeWrapper h2 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 1rem 0;
+  }
+  .noticeWrapper .pcTableContents {
+    display: none;
+  }
+  .noticeWrapper .mobileTableContents {
+    margin-top: 2rem;
+  }
+  .noticeWrapper .mobileTableContents .tableClassifi {
+    background-color: #006FD4;
+    padding: 0.5rem;
+    color: #fff;
+    font-size: 0.7rem;
+  }
+  .noticeWrapper .mobileTableContents .tableItem {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  .noticeWrapper .mobileTableContents .tableItem .imp {
+    margin-right: 1rem;
+    font-size: 0.7rem;
+    background-color: #FF6D0C;
+    font-weight: 700;
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+  }
+  .noticeWrapper .mobileTableContents .tableItem .date {
+    line-height: 1rem;
+    font-size: 0.5rem;
+  }
+  .noticeWrapper .pageNumberWrapper {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  .noticeWrapper .pageNumberWrapper .pageNumber {
+    display: inline-block;
+    color: #fff;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    background-color: #006FD4;
+  }
 }
