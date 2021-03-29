@@ -68,7 +68,7 @@
 
 @media screen and (max-width: 767px) {
   .noticeWrapper {
-    width: 75%;
+    width: 85%;
     margin: 5rem auto;
   }
   .noticeWrapper h1 {
