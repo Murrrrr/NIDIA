@@ -10,7 +10,7 @@
 .bodyWrapper .pcProductWrapper .product-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, auto));
-  grid-template-rows: repeat(7, minmax(150px, auto));
+  grid-template-rows: repeat(8, minmax(150px, auto));
   align-items: center;
 }
 
