@@ -96,7 +96,7 @@
   }
   .noticeWrapper .mobileTableContents .tableItem a {
     padding: 1.5rem 0.5rem;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   .noticeWrapper .mobileTableContents .tableItem a .imp {
     margin-right: 1rem;
@@ -108,8 +108,8 @@
   }
   .noticeWrapper .mobileTableContents .tableItem a .date {
     float: right;
-    line-height: 1rem;
-    font-size: 0.5rem;
+    line-height: 1.2rem;
+    font-size: 0.6rem;
   }
   .noticeWrapper .pageNumberWrapper {
     margin-top: 1.5rem;
