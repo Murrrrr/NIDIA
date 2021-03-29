@@ -68,16 +68,16 @@
     font-size: 1.5rem;
   }
   .boardWrapper .pcTableContents {
-    display: none;
+    display: flex;
   }
   .boardWrapper .pcTableContents .tableItem {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .boardWrapper .pcTableContents #tableDate {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .boardWrapper .pcTableContents #tableView {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .boardWrapper .mobileTableContents {
     display: none;
@@ -93,15 +93,6 @@
   }
   .boardWrapper .pcTableContents {
     display: none;
-  }
-  .boardWrapper .pcTableContents .tableItem {
-    font-size: 0.8rem;
-  }
-  .boardWrapper .pcTableContents #tableDate {
-    font-size: 0.8rem;
-  }
-  .boardWrapper .pcTableContents #tableView {
-    font-size: 0.8rem;
   }
   .boardWrapper .mobileTableContents {
     display: flex;
@@ -126,10 +117,10 @@
     padding: 0.5rem 1rem;
   }
   .boardWrapper .mobileTableContents .tableItem {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .boardWrapper .mobileTableContents #tableDate {
-    font-size: 0.8rem;
+    font-size: 1rem;
     width: 30%;
   }
 }
