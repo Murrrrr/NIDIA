@@ -12,27 +12,31 @@
   padding: 2rem 0;
 }
 
-.boardWrapper .tableContents {
+.boardWrapper .pcTableContents {
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.boardWrapper .tableContents .tableClassifi {
+.boardWrapper .pcTableContents .tableClassifi {
   text-align: center;
   color: #fff;
   padding: 1.2rem;
   background-color: #006FD4;
 }
 
-.boardWrapper .tableContents #tableSub {
+.boardWrapper .pcTableContents .tableItem {
+  font-size: 1rem;
+}
+
+.boardWrapper .pcTableContents #tableSub {
   width: 60%;
   text-align: left;
   border-right: 3px solid #fff;
 }
 
-.boardWrapper .tableContents #tableSub span {
+.boardWrapper .pcTableContents #tableSub .imp {
   margin-right: 1rem;
   font-size: 0.9rem;
   background-color: #FF6D0C;
@@ -41,12 +45,14 @@
   padding: 0.5rem 1rem;
 }
 
-.boardWrapper .tableContents #tableDate {
+.boardWrapper .pcTableContents #tableDate {
+  font-size: 1rem;
   width: 20%;
   border-right: 3px solid #fff;
 }
 
-.boardWrapper .tableContents #tableView {
+.boardWrapper .pcTableContents #tableView {
+  font-size: 1rem;
   width: 20%;
 }
 
@@ -55,4 +61,132 @@
   word-break: keep-all;
   line-height: 2rem;
   border-bottom: 1px solid #ddd;
+}
+
+@media screen and (max-width: 1599px) {
+  .boardWrapper h1 {
+    font-size: 1.5rem;
+  }
+  .boardWrapper .pcTableContents {
+    display: none;
+  }
+  .boardWrapper .pcTableContents .tableItem {
+    font-size: 0.8rem;
+  }
+  .boardWrapper .pcTableContents #tableDate {
+    font-size: 0.8rem;
+  }
+  .boardWrapper .pcTableContents #tableView {
+    font-size: 0.8rem;
+  }
+  .boardWrapper .mobileTableContents {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .boardWrapper {
+    width: 85%;
+  }
+  .boardWrapper h1 {
+    font-size: 1.5rem;
+  }
+  .boardWrapper .pcTableContents {
+    display: none;
+  }
+  .boardWrapper .pcTableContents .tableItem {
+    font-size: 0.8rem;
+  }
+  .boardWrapper .pcTableContents #tableDate {
+    font-size: 0.8rem;
+  }
+  .boardWrapper .pcTableContents #tableView {
+    font-size: 0.8rem;
+  }
+  .boardWrapper .mobileTableContents {
+    display: flex;
+  }
+  .boardWrapper .mobileTableContents .tableClassifi {
+    text-align: center;
+    color: #fff;
+    padding: 1.2rem;
+    background-color: #006FD4;
+    font-size: 1rem;
+  }
+  .boardWrapper .mobileTableContents #tableSub {
+    border-right: 3px solid #fff;
+    width: 70%;
+  }
+  .boardWrapper .mobileTableContents #tableSub .imp {
+    margin-right: 1rem;
+    font-size: 0.7rem;
+    background-color: #FF6D0C;
+    font-weight: 700;
+    color: #fff;
+    padding: 0.5rem 1rem;
+  }
+  .boardWrapper .mobileTableContents .tableItem {
+    font-size: 0.8rem;
+  }
+  .boardWrapper .mobileTableContents #tableDate {
+    font-size: 0.8rem;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .boardWrapper {
+    width: 85%;
+  }
+  .boardWrapper h1 {
+    font-size: 1rem;
+  }
+  .boardWrapper h2 {
+    padding: 1.5rem 0;
+    font-size: 0.8rem;
+  }
+  .boardWrapper .pcTableContents {
+    display: none;
+  }
+  .boardWrapper .pcTableContents .tableItem {
+    font-size: 0.8rem;
+  }
+  .boardWrapper .pcTableContents #tableDate {
+    font-size: 0.8rem;
+  }
+  .boardWrapper .pcTableContents #tableView {
+    font-size: 0.8rem;
+  }
+  .boardWrapper .mobileTableContents {
+    display: flex;
+  }
+  .boardWrapper .mobileTableContents .tableClassifi {
+    text-align: center;
+    color: #fff;
+    padding: 1.2rem;
+    background-color: #006FD4;
+    font-size: 1rem;
+  }
+  .boardWrapper .mobileTableContents #tableSub {
+    border-right: 3px solid #fff;
+    width: 65%;
+  }
+  .boardWrapper .mobileTableContents #tableSub .imp {
+    margin-right: 0.5rem;
+    font-size: 0.65rem;
+    background-color: #FF6D0C;
+    font-weight: 700;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+  }
+  .boardWrapper .mobileTableContents .tableItem {
+    font-size: 0.7rem;
+  }
+  .boardWrapper .mobileTableContents #tableDate {
+    font-size: 0.7rem;
+    width: 35%;
+  }
+  .boardWrapper .writingSection {
+    font-size: 0.8rem;
+  }
 }
