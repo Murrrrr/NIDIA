@@ -100,23 +100,26 @@
 
             .tableItem{
                 border-bottom: 1px solid #ddd;
-                .imp{
-                    margin-right: 1rem;
+                a{
+                    padding: 1.5rem 0.5rem;
                     font-size: 0.7rem;
-                    background-color: #FF6D0C;
-                    font-weight: 700;
-                    color: #fff;
-                    padding: 0.3rem 0.8rem;
+
+                    .imp{
+                        margin-right: 1rem;
+                        font-size: 0.7rem;
+                        background-color: #FF6D0C;
+                        font-weight: 700;
+                        color: #fff;
+                        padding: 0.3rem 0.8rem;
+                    }
+    
+                    .date{
+                        float:right;
+                        line-height: 1rem;
+                        font-size: 0.5rem;
+                    }
                 }
 
-                .date{
-                    float:right;
-                    line-height: 1rem;
-                    font-size: 0.5rem;
-                }
-
-                padding: 1.5rem 0.5rem;
-                font-size: 0.7rem;
             }
         }
     
