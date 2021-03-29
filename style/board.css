@@ -88,6 +88,7 @@
   }
   .noticeWrapper .mobileTableContents {
     margin-top: 2rem;
+    display: block;
   }
   .noticeWrapper .mobileTableContents .tableClassifi {
     background-color: #006FD4;
