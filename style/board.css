@@ -106,7 +106,7 @@
   }
   .noticeWrapper .mobileTableContents .tableItem .date {
     float: right;
-    line-height: 0.6rem;
+    line-height: 1rem;
     font-size: 0.5rem;
   }
   .noticeWrapper .pageNumberWrapper {
