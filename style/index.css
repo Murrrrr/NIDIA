@@ -10,9 +10,15 @@
 }
 
 .bodyWrapper .mobileBoardNav .mainNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bodyWrapper .mobileBoardNav .mainNav li {
@@ -66,7 +72,8 @@
   height: 100%;
   background-image: url("../image/mainImage.jpg");
   background-size: cover;
-  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 .bodyWrapper .mainWrapper .mainIntro {
@@ -74,7 +81,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -103,6 +111,7 @@
   border-radius: 50px;
   border: none;
   font-weight: bold;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -116,6 +125,8 @@
 }
 
 .bodyWrapper .pcBoardNav .mainNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
