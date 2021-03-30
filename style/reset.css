@@ -83,10 +83,11 @@ header .pcNav ul li {
 
 header .pcNav ul li a {
   text-align: center;
-  width: 8rem;
+  width: 10rem;
   line-height: 5rem;
   height: 5rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 header .pcNav ul li a:hover {
@@ -95,7 +96,7 @@ header .pcNav ul li a:hover {
 
 header .pcNav ul .far {
   margin-left: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 

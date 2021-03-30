@@ -28,12 +28,12 @@
 .boardWrapper .pcTableContents .tableClassifi {
   text-align: center;
   color: #fff;
-  padding: 1.2rem;
+  padding: 1.5rem;
   background-color: #006FD4;
 }
 
 .boardWrapper .pcTableContents .tableItem {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .boardWrapper .pcTableContents #tableSub {
@@ -52,13 +52,13 @@
 }
 
 .boardWrapper .pcTableContents #tableDate {
-  font-size: 1rem;
+  font-size: 1.2rem;
   width: 20%;
   border-right: 3px solid #fff;
 }
 
 .boardWrapper .pcTableContents #tableView {
-  font-size: 1rem;
+  font-size: 1.2rem;
   width: 20%;
 }
 
@@ -71,6 +71,7 @@
   word-break: keep-all;
   line-height: 2rem;
   border-bottom: 1px solid #ddd;
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 1599px) {

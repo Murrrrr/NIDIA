@@ -9,12 +9,13 @@
 }
 
 .contactWrapper .searchSection h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .contactWrapper .searchSection h2 {
-  margin: 1.5rem 0;
-  font-size: 1.2rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -64,12 +65,12 @@
 
 .contactWrapper .faqWrapper .faqSection .subject h1 {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-right: 1rem;
 }
 
 .contactWrapper .faqWrapper .faqSection .subject img {
-  width: 5%;
+  width: 4%;
 }
 
 .contactWrapper .faqWrapper .faqSection .faqContainer {
@@ -94,6 +95,8 @@
 }
 
 .contactWrapper .faqWrapper .faqSection .faqContainer .faqItem p {
+  font-size: 1.2rem;
+  text-indent: 5px;
   line-height: 2rem;
   word-break: keep-all;
 }
@@ -105,7 +108,7 @@
 }
 
 .contactWrapper .mtomWrapper h1 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .contactWrapper .mtomWrapper .mtomContainer {
@@ -148,8 +151,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 0.9rem;
-  padding: 0.8rem 0;
+  font-size: 1.2rem;
+  padding: 1.2rem 0;
 }
 
 .contactWrapper .mtomWrapper .mtomContainer .mtomSection .fa-chevron-right {
@@ -159,7 +162,7 @@
 }
 
 .contactWrapper .mtomWrapper .mtomContainer .mtomSection p {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   line-height: 1.2rem;
   word-break: keep-all;
 }
@@ -206,6 +209,7 @@
 .contactWrapper .pcBoardNav .mainNav .mainNav-list a {
   color: #fff;
   padding: 1.5rem 2rem;
+  font-size: 1.1rem;
 }
 
 .contactWrapper .pcBoardNav .mainNav .mainNav-list a .fa-chevron-right {
@@ -217,7 +221,7 @@
 }
 
 .contactWrapper .pcBoardNav .mainNav .mainNav-list .subNav li a {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: #000;
 }
 

@@ -24,11 +24,12 @@
 }
 
 .bodyWrapper .pcProductWrapper .product-grid .productInfo h1 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .bodyWrapper .pcProductWrapper .product-grid .productInfo h2 {
-  font-size: 0.9rem;
+  margin-top: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
   word-break: keep-all;
 }
@@ -44,8 +45,13 @@
 }
 
 .bodyWrapper .pcProductWrapper .product-grid .productImage h1 {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.bodyWrapper .pcProductWrapper .product-grid .productImage h2 {
+  font-size: 1.2rem;
 }
 
 .bodyWrapper .pcProductWrapper .product-grid .productOX {
@@ -58,14 +64,19 @@
   text-align: center;
 }
 
+.bodyWrapper .pcProductWrapper .product-grid .downloadItem h1 {
+  font-size: 1.2rem;
+}
+
 .bodyWrapper .pcProductWrapper .product-grid .downloadItem button {
   margin-top: 2rem;
   border-radius: 50px;
   border: none;
   background-color: #006FD4;
-  width: 7.5rem;
-  height: 2.5rem;
+  width: 8rem;
+  height: 3rem;
   color: #fff;
+  font-size: 1.1rem;
 }
 
 .bodyWrapper .mobileProductWrapper {
@@ -195,13 +206,13 @@
 }
 
 .bodyWrapper .productIntro .productItem .infoWrapper h1 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .bodyWrapper .productIntro .productItem .infoWrapper h2 {
   margin-top: 1rem;
   word-break: keep-all;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   line-height: 2rem;
 }

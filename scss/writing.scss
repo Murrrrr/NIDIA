@@ -22,12 +22,12 @@
         .tableClassifi{
             text-align: center;
             color: #fff;
-            padding: 1.2rem;
+            padding: 1.5rem;
             background-color: #006FD4;
         }
 
         .tableItem{
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
 
         #tableSub{
@@ -46,13 +46,13 @@
         }
 
         #tableDate{
-            font-size: 1rem;
+            font-size: 1.2rem;
             width: 20%;
             border-right: 3px solid #fff;
         }
 
         #tableView{
-            font-size: 1rem;
+            font-size: 1.2rem;
             width: 20%;
         }
     }
@@ -66,6 +66,7 @@
         word-break: keep-all;
         line-height: 2rem;
         border-bottom: 1px solid #ddd;
+        font-size: 1.1rem;
     }
 }
 

@@ -4,10 +4,11 @@
 }
 
 .noticeWrapper h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .noticeWrapper h2 {
+  font-size: 1.2rem;
   font-weight: 500;
   padding: 2rem 0;
 }
@@ -28,6 +29,7 @@
 }
 
 .noticeWrapper .pcTableContents .tableClassifi {
+  font-size: 1.2rem;
   text-align: center;
   color: #fff;
   padding: 1.2rem;
@@ -43,11 +45,15 @@
 }
 
 .noticeWrapper .pcTableContents .tableItem {
-  padding: 1.5rem 1rem;
   border-bottom: 1px solid #C5C5C5;
 }
 
-.noticeWrapper .pcTableContents .tableItem .imp {
+.noticeWrapper .pcTableContents .tableItem a {
+  padding: 2rem 1rem;
+  font-size: 1.2rem;
+}
+
+.noticeWrapper .pcTableContents .tableItem a .imp {
   margin-right: 1rem;
   font-size: 0.9rem;
   background-color: #FF6D0C;
@@ -57,6 +63,8 @@
 }
 
 .noticeWrapper .pcTableContents .date, .noticeWrapper .pcTableContents .view {
+  font-size: 1.1rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
